@@ -1,5 +1,5 @@
 app:
-  version_check_url: "https://raw.githubusercontent.com/sansan0/TrendRadar/refs/heads/master/version"
+  version_check_url: "https://raw.githubusercontent.com/gogogen/TrendRadar/refs/heads/master/version"
   show_version_update: true # 控制显示版本更新提示，如果 false，则不接受新版本提示
 
 crawler:
@@ -26,7 +26,7 @@ crawler:
 # 推送模式选择
 report:
   mode: "daily" # 可选: "daily"|"incremental"|"current"
-  rank_threshold: 5 # 排名高亮阈值
+  rank_threshold: 30 # 排名高亮阈值
 
 notification:
   enable_notification: true # 是否启用通知功能，如果 false，则不发送手机通知
@@ -48,7 +48,7 @@ notification:
     time_range:
       start: "20:00"  # 推送时间窗口开始（北京时间）
       end: "22:00"    # 推送时间窗口结束（北京时间）
-    once_per_day: true  # 每天在时间窗口内只推送一次，如果 false，则窗口内每次执行都推送
+    once_per_day: false  # 每天在时间窗口内只推送一次，如果 false，则窗口内每次执行都推送
     push_record_retention_days: 7  # 推送记录保留天数
 
   # 请务必妥善保管好 webhooks，不要公开
